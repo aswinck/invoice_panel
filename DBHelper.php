@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Description of DBHelper
- *
+ * created by {ckaswinck@gmail.com} on 14/12/2017
+ * this class handle the connection of database
  * @author ckaswinck@gmail.com
  */
 class DBHelper {

@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Description of DBOperations
- *
+ * created by {ckaswinck@gmail.com} on 14/12/2017
+ * this calss to manage all the db operations for this module
  * @author ckaswinck@gmail.com
  */
 require_once ('./DBHelper.php');
@@ -37,6 +37,14 @@ class DBOperations {
         }
     }
 
+    
+    /**
+     * created by ckaswinck@gmail.com  on 14/12/2017
+     * function to get the invoice details by product and date range
+     * @param type $conditions {array}  search data
+     * @return type {array}  return query result
+     */
+    
     public function getInvoiceByProductBetweenDates($conditions = array()) {
         try {
             $sth = $this->db->prepare('select i.id,ind.type,ind.amount from invoices i 
